@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <header id="theHeader">
+
+        <nav className="nav-header">
+          <Link to="/" className={"list-item"}>Home</Link>
+          <Link to="/services" className={"list-item"}>Services</Link>
+          <Link to="/about" className={"list-item"}>About</Link>
+          <Link to="/fittips" className={"list-item"}>Fit-Tips</Link>
+        </nav>
+        <div className="hamburg-container" onClick={this.props.toggleMenu}>
+          <div className="hamburg-paddie"> </div>
+          <div className="hamburg-paddie"> </div>
+          <div className="hamburg-paddie"> </div>
+        </div>
+        {
+        this.props.isMenuOpen? (
+            <div className="hamburger-dropdown">
+              <nav className="small-nav-header">
+                <Link to="/" className={"drop-item"} onClick={this.props.toggleMenu}>Home</Link>
+                <Link to="/services" className={"drop-item"} onClick={this.props.toggleMenu}>Services</Link>
+                <Link to="/about" className={"drop-item"} onClick={this.props.toggleMenu}>About</Link>
+                <Link to="/contact" className={"drop-item"} onClick={this.props.toggleMenu}>Contact</Link>
+              </nav>
+            </div>
+          ): null
+        }
+    </header>
+
+
+
+    <p>Here da index</p>
+
+    <a href="index.html">Home/Index</a> <br>
+  	<a href="fitTips.html">Fit Tips</a> <br>
+		<!-- <a href="graphicdesign.html">Graphic Design</a> <br> -->
+
+
+
+    <div>
+      <div id="top-pic">
+      </div>
+      <h2 className="titler"> BioLogic Fitness and Health </h2>
+      <div className="centre-column">
+        <h3> Reinvigorate Your Life! </h3>
+        <p>
+          We specialize in Health and Fitness programs for individuals age 50+.
+           Your needs are unique, and we will help you reach them!
+           <br/>
+           <br/>
+           <br/>
+        </p>
+      </div>
+      <div className="centre-column">
+        <!-- <Step1 updateGoal={this.updateGoal}/> -->
+      </div>
+      <div className="home-background">
+        <div className="centre-column">
+          <!-- <Step2 updatePlan={this.updatePlan}/> -->
+        </div>
+      </div>
+      <div className="centre-column">
+        <!-- <Step3 goal={this.state.goal} plan={this.state.plan}/> -->
+      </div>
+    </div>
+
+
+
+
+
+    <footer>
+      <script src="footer.js">
+      </script>
+    </footer>
+  </body>
+</html>
