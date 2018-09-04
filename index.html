@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <link rel="stylesheet" type="text/css" href="css/rooter.css">
     <meta charset="utf-8">
     <title></title>
   </head>
   <body>
     <header id="theHeader">
+      <h1 className="top-logo">BFH </h1>
+      <h2 className="top-info"> East Scarborough / Pickering <b>|</b> 647-573-2636 <b>|</b> biologicfitnessandhealth@gmail.com</h2>
 
-        <nav className="nav-header">
-          <Link to="/" className={"list-item"}>Home</Link>
-          <Link to="/services" className={"list-item"}>Services</Link>
-          <Link to="/about" className={"list-item"}>About</Link>
-          <Link to="/fittips" className={"list-item"}>Fit-Tips</Link>
-        </nav>
-        <div className="hamburg-container" onClick={this.props.toggleMenu}>
-          <div className="hamburg-paddie"> </div>
-          <div className="hamburg-paddie"> </div>
-          <div className="hamburg-paddie"> </div>
-        </div>
-        {
-        this.props.isMenuOpen? (
-            <div className="hamburger-dropdown">
-              <nav className="small-nav-header">
-                <Link to="/" className={"drop-item"} onClick={this.props.toggleMenu}>Home</Link>
-                <Link to="/services" className={"drop-item"} onClick={this.props.toggleMenu}>Services</Link>
-                <Link to="/about" className={"drop-item"} onClick={this.props.toggleMenu}>About</Link>
-                <Link to="/contact" className={"drop-item"} onClick={this.props.toggleMenu}>Contact</Link>
-              </nav>
-            </div>
-          ): null
-        }
+      <nav className="nav-header">
+        <ul className="nav-header">
+          <li className="list-item"><a href="index.html">Home</a> <br></li>
+          <li className="list-item"><a href="fitTips.html">Fit-Tips</a> <br></li>
+          <li className="list-item"><a href="services.html">Services</a> <br></li>
+          <li><a href="about.html">About</a> <br></li>
+        </ul>
+      </nav>
+
+      <div className="hamburg-container" onClick={this.props.toggleMenu}>
+        <div className="hamburg-paddie"> </div>
+        <div className="hamburg-paddie"> </div>
+        <div className="hamburg-paddie"> </div>
+      </div>
+          <div className="hamburger-dropdown">
+            <nav className="small-nav-header">
+              <Link to="/" className={"drop-item"} onClick={this.props.toggleMenu}>Home</Link>
+              <Link to="/services" className={"drop-item"} onClick={this.props.toggleMenu}>Services</Link>
+              <Link to="/about" className={"drop-item"} onClick={this.props.toggleMenu}>About</Link>
+              <Link to="/contact" className={"drop-item"} onClick={this.props.toggleMenu}>Contact</Link>
+            </nav>
+          </div>
     </header>
+
+    <div>
+
+    </div>
 
 
 
@@ -51,9 +57,9 @@
         <p>
           We specialize in Health and Fitness programs for individuals age 50+.
            Your needs are unique, and we will help you reach them!
-           <br/>
-           <br/>
-           <br/>
+          <br/>
+          <br/>
+          <br/>
         </p>
       </div>
       <div className="centre-column">
@@ -76,6 +82,35 @@
     <footer>
       <script src="footer.js">
       </script>
+
+
+      <div className="bottom-footer">
+        <div className="contact-us">
+          <h2> Contact Us </h2>
+          <p>
+
+            Phone<br/>   <b>  647-573-2636</b><br/><br/>
+
+            Email<br/>     <b> biologicfitnessandhealth@gmail.com</b><br/><br/>
+          </p>
+        </div>
+        <div className="contact-us">
+          <h2> About Us </h2>
+
+          <p>
+            BioLogic Health and Fitness specializes in health and fitness programs for individuals over 50.
+            Your needs are unique and we can work with you to build a program tailored made to you.<br/>
+          </p>
+        </div>
+        <nav className="footer-nav">
+          <Link to="/" className={"footer-nav-item"}>Home</Link>
+          <Link to="/services" className={"footer-nav-item"}>Services</Link>
+          <Link to="/about" className={"footer-nav-item"}>About</Link>
+          <Link to="/fittips" className={"footer-nav-item"}>Fit-Tips</Link>
+        </nav>
+      </div>
+
+
     </footer>
   </body>
 </html>

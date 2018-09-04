@@ -1,0 +1,44 @@
+:root {
+  --headerHeight: 100px;
+  --headerMinHeight: 30px;
+  --centreWidth: 700px;
+  --centreMargin: 10%;
+  /* --centreMargin: calc((100vw - var(--centreWidth))/2); */
+  --topClip: 120px;
+  }
+
+body {
+  color: #333;
+  margin: 0;
+  padding-top: var(--headerHeight);
+  font-family: sans-serif;
+  background-color: cornsilk;
+}
+
+header {
+  background: linear-gradient(to bottom right, RGB(230,168,23), RGB(230,168,23));
+  width: 100%;
+  height: var(--headerHeight);
+  padding: 10px 0;
+  color: white;
+  z-index: 200;
+  display: block;
+  position: fixed;
+  top: 0;
+}
+
+header h1 {
+  color: #333;
+  padding-left: 15%;
+  display: inline;
+}
+
+header h2 {
+  color: #333;
+  padding-right: 15%;
+  text-align: right;
+  font-size: 15px;
+  display: inline;
+  float: right;
+  font-weight: 400;
+}
