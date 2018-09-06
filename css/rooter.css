@@ -1,8 +1,8 @@
 :root {
-  --headerHeight: 100px;
+  --headerHeight: 80px;
   --headerMinHeight: 30px;
   --centreWidth: 700px;
-  --centreMargin: 15%;
+  --centreMargin: 10%;
   /* --centreMargin: calc((100vw - var(--centreWidth))/2); */
   --topClip: 120px;
   }
@@ -28,7 +28,7 @@ header {
 }
 
 header nav {
-  margin-top: 60px;
+  margin-top: 45px;
   padding-left: var(--centreMargin);
 }
 
@@ -49,18 +49,22 @@ header a {
   text-decoration: none;
 }
 
+.spacer {
+  height: 30px;
+}
+
 .centre-column {
   display: inline-block;
   /* background: linear-gradient(to bottom right, pink, purple); */
   margin-left: var(--centreMargin);
+  margin-right: var(--centreMargin);
   height: 100%;
-  width: var(--centreWidth);
   text-align: center;
 }
 
 .top-logo {
   color: #333;
-  margin-top: 10px;
+  margin-top: 5px;
   top: 0px;
   float: left;
   position: fixed;
@@ -75,6 +79,7 @@ header a {
   color: #333;
   padding-right: 15%;
   text-align: right;
+  margin-top: 0px;
   font-size: 15px;
   display: inline;
   float: right;
@@ -113,3 +118,44 @@ header a {
   background-color: lightgreen;
   color: white;
 } */
+
+
+
+
+/* Footer styling below VVVV */
+
+.bottom-footer {
+  padding: 20px var(--centreMargin);
+  margin-top: 2%;
+  bottom: 0;
+  height: 150px;
+  width: 100%;
+  background-color: RGB(230,168,23);
+}
+
+.bottom-footer h2 {
+  text-align: left;
+  vertical-align: top;
+}
+
+.contact-us {
+  margin-right: 10%;
+  vertical-align: top;
+  font-size: 12px;
+  display: inline-block;
+  width: 250px;
+}
+
+.footer-nav {
+  margin-left: 25vw;
+  display: block;
+}
+
+.footer-nav-item {
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  margin-left: 25px;
+  font-size: 15px;
+  color: cornsilk;
+}
