@@ -9,7 +9,7 @@
   <body>
     <header id="theHeader">
       <h1 class="top-logo">BFH </h1>
-      <h2 class="top-info"> East Scarborough / Pickering <b>|</b> 647-573-2636 <b>|</b> biologicfitnessandhealth@gmail.com</h2>
+      <h2 class="top-info">Scarborough / Pickering <b>|</b> 647-573-2636 <b>|</b> biologicfitnessandhealth@gmail.com</h2>
 
       <nav>
         <ul>
@@ -61,22 +61,21 @@
 
 
   <!-- Step 1 -->
-  <script src="Home.js"></script>
   <div class="step1">
     <h2 class="lefter">
       <b class="spacer">Step 1    </b>Choose Your Goal: "I want to..."
     </h2>
 
     <ul class="home-ul">
-      <li><button value="loseWeight" onClick="blah()">
+      <li><button value="loseWeight" onClick="updateContactForm('loseWeight')">
           Lose Weight </button></li>
-      <li><button value="reduceStress" onClick=>
+      <li><button value="reduceStress" onClick="updateContactForm('reduceStress')">
           Reduce Stress</button></li>
-      <li><button value="improveHealth" onClick=>
+      <li><button value="improveHealth" onClick="updateContactForm('improveHealth')">
         Improve Health</button></li>
-      <li><button value="getFitter" onClick=>
+      <li><button value="getFitter" onClick="updateContactForm('getFitter')">
         Get Fitter</button></li>
-      <li><button value="notSure" onClick=>
+      <li><button value="notSure" onClick="updateContactForm('notSure')">
         Not Sure</button></li>
     </ul>
   </div>
@@ -186,24 +185,24 @@
 
               <label>
                 <pre>Goal  </pre>
-                <select class="step3-select" name="goals">
-                  <option value="loseWeight" selected={this.props.goal === 'loseWeight'}>Lose Weight </option>
-                  <option value="reduceStress" selected={this.props.goal === 'reduceStress'}>Reduce Stress </option>
-                  <option value="improveHealth" selected={this.props.goal === 'improveHealth'}>Improve Health </option>
-                  <option value="getFitter" selected={this.props.goal === 'getFitter'}>Get Fitter </option>
-                  <option value="notSure" selected={this.props.goal === 'notSure'} >Not Sure </option>
+                <select class="step3-select" id="goals">
+                  <option value="loseWeight" selected="selected">Lose Weight </option>
+                  <option value="reduceStress">Reduce Stress </option>
+                  <option value="improveHealth">Improve Health </option>
+                  <option value="getFitter">Get Fitter </option>
+                  <option value="notSure">Not Sure </option>
                 </select>
               </label>
               <br />
 
               <label>
                 <pre>Plan  </pre>
-                <select class="step3-select" name="plans">
-                  <option value="plan1" selected={this.props.plan === 'plan1'}>Plan 1 </option>
-                  <option value="plan2" selected={this.props.plan === 'plan2'}>Plan 2 </option>
-                  <option value="plan3" selected={this.props.plan === 'plan3'}>Plan 3 </option>
-                  <option value="plan4" selected={this.props.plan === 'plan4'}>Plan 4 </option>
-                  <option value="plan5" selected={this.props.plan === 'plan5'}>Plan 5 </option>
+                <select class="step3-select" id="plans">
+                  <option value="plan1">Plan 1 </option>
+                  <option value="plan2">Plan 2 </option>
+                  <option value="plan3">Plan 3 </option>
+                  <option value="plan4">Plan 4 </option>
+                  <option value="plan5">Plan 5 </option>
 
                 </select>
               </label>
@@ -220,8 +219,11 @@
       </div>
     </div>
   </div>
+  <br>
+  <br>
 </div>
 
+<script src="Home.js"></script>
 
 
     <footer>
