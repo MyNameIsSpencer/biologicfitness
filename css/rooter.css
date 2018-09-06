@@ -2,7 +2,7 @@
   --headerHeight: 100px;
   --headerMinHeight: 30px;
   --centreWidth: 700px;
-  --centreMargin: 10%;
+  --centreMargin: 15%;
   /* --centreMargin: calc((100vw - var(--centreWidth))/2); */
   --topClip: 120px;
   }
@@ -26,3 +26,90 @@ header {
   position: fixed;
   top: 0;
 }
+
+header nav {
+  margin-top: 60px;
+  padding-left: var(--centreMargin);
+}
+
+header nav ul li {
+  display: inline-block;
+  padding-right: 20px;
+}
+
+header nav ul {
+  padding-left: 0;
+}
+
+header a {
+  display: inline;
+  padding-right: 20px;
+  color: cornsilk;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.centre-column {
+  display: inline-block;
+  /* background: linear-gradient(to bottom right, pink, purple); */
+  margin-left: var(--centreMargin);
+  height: 100%;
+  width: var(--centreWidth);
+  text-align: center;
+}
+
+.top-logo {
+  color: #333;
+  margin-top: 10px;
+  top: 0px;
+  float: left;
+  position: fixed;
+  z-index: 201;
+  /* padding-left: 45px; */
+  color: #333;
+  padding-left: var(--centreMargin);
+  display: inline;
+}
+
+.top-info {
+  color: #333;
+  padding-right: 15%;
+  text-align: right;
+  font-size: 15px;
+  display: inline;
+  float: right;
+  font-weight: 400;
+  display: inline;
+  padding-right: 20px;
+}
+
+.list-item {
+  display: inline-block;
+}
+
+/* .top-info {
+  color: #333;
+  font-weight: normal;
+  right: var(--centreMargin);
+  font-size: 15px;
+  margin-top: 30px;
+  top: 0px;
+  float: right;
+  position: fixed;
+  z-index: 201;
+} */
+
+/* .list-item {
+  style: none;
+  color: cornsilk;
+  text-decoration: none;
+  font-size: 30px;
+  padding: 10px 20px;
+  margin-top: 15px;
+  display: inline;
+}
+
+.list-item:hover {
+  background-color: lightgreen;
+  color: white;
+} */
