@@ -1,69 +1,70 @@
-.step1 {
+form {
+ width: 300px;
+}
+
+label {
   text-align: left;
-}
-
-.seperator {
-  border-right: 10px solid firebrick;
-}
-
-.home-ul {
   display: inline-block;
-  border-right: 10px solid firebrick;
+  width: 250px;
+  text-align: right;
 }
 
-.home-ul li {
-  list-style: none;
+input, select {
+  display: inline-block;
+  margin-bottom: 6px;
+  height: 25px;
+  width: 150px;
 }
 
-.home-ul li button{
-  font-size: 20px;
-  padding: 12px 5px;
-  margin: 5px 0px;
-  width: 160px;
+input[type="submit"] {
+  display: block;
+  margin-top: 20px;
+  margin-left: 50px;
   background-color: lightgrey;
-  text-align: center;
+  font-size: 20px;
+  color: black;
+  width: 200px;
+  height: 40px;
 }
 
-.home-ul li button:hover{
+input[type="submit"]:hover {
   background-color: lightgreen;
   color: white;
 }
 
-.home-ul li button:focus{
-  background-color: dimgray;
-  color: white;
-  /* border-right: 10px solid firebrick; */
+select {
+  padding-bottom: 5px;
 }
 
-.displayer {
-  vertical-align: top;
-  height: 100%;
-  padding: 20px;
-  display: inline-block;
+input[type="textarea"] {
+ height: 100px;
+ width: 200px;
 }
 
-.descriptor {
-  vertical-align: top;
-  display: block;
-  height: 50px;
-  width: 300px;
+.step3-select {
+  height: 25px;
+  width: 155px;
 }
 
-.step1-pic {
-  display: block;
+.message-label {
   text-align: left;
-  margin-top: 50px;
+}
+
+.step3-form {
+  text-align: left;
+  width: 100%;
+  vertical-align: top;
+}
+
+.left-wrapper {
   width: 300px;
+  display: inline-block;
+  vertical-align: top;
 }
 
-.step1-pic img {
-  max-height: 200px;
-  max-width: 300px;
-}
-
-.step1-pic
-
-.left-table {
-  display: block;
+.message-wrapper {
+  width: 35%;
+  margin-left: 30px;
+  display: inline-block;
   vertical-align: top;
 }

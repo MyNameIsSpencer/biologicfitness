@@ -28,13 +28,8 @@ header {
 }
 
 header nav {
-  margin-top: 45px;
+  margin-top: 39px;
   padding-left: var(--centreMargin);
-}
-
-header nav ul li {
-  display: inline-block;
-  padding-right: 20px;
 }
 
 header nav ul {
@@ -43,7 +38,6 @@ header nav ul {
 
 header a {
   display: inline;
-  padding-right: 20px;
   color: cornsilk;
   font-size: 30px;
   text-decoration: none;
@@ -90,6 +84,13 @@ header a {
 
 .list-item {
   display: inline-block;
+  display: inline-block;
+  padding: 8px 20px;
+}
+
+.list-item:hover {
+  background-color: lightgreen;
+  color: white;
 }
 
 /* .top-info {
