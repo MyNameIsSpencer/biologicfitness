@@ -59,7 +59,7 @@ header a {
   margin-left: var(--centreMargin);
   margin-right: var(--centreMargin);
   height: 100%;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .top-logo {
