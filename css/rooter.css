@@ -88,6 +88,11 @@ header a {
   padding: 8px 20px;
 }
 
+.list-item:first-child {
+  margin-left: -20px
+  /* padding-left: 0; */
+}
+
 .list-item:hover {
   background-color: lightgreen;
   color: white;

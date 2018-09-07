@@ -1,0 +1,23 @@
+.first-clump {
+  background-color: cornsilk;
+  font-size: 20px;
+}
+
+.heading {
+  color: rgb(230, 168, 23);
+  font-size: 30px;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(100, 100, 100, 0), rgba(100, 100, 100, 0.75), rgba(100, 100, 100, 0));
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+p {
+  text-align: left;
+}
